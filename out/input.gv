@@ -1,0 +1,26 @@
+digraph {
+    labelloc = "t"
+    fontsize = "70"
+    nodesep = 0.4
+    node [shape = record]
+    splines=ortho
+    rankdir=TB
+    "chelovek" -> "jivotnoe" [xlabel = no, color = "red"]
+    "jivotnoe" -> "vedet u FPMI" [xlabel = no, color = "red"]
+    "vedet u FPMI" -> "est mozg" [xlabel = no, color = "red"]
+    "est mozg" -> "Petrovich" [xlabel = no, color = "red"]
+    "est mozg" -> "zombi" [xlabel = yes, color = "green"]
+    "vedet u FPMI" -> "Redkozubov" [xlabel = yes, color = "green"]
+    "jivotnoe" -> "Poltorashka" [xlabel = yes, color = "green"]
+    "chelovek" -> "poet" [xlabel = yes, color = "green"]
+    "poet" -> "vystupaet v cirke" [xlabel = no, color = "red"]
+    "vystupaet v cirke" -> "rabotaet v teatre" [xlabel = no, color = "red"]
+    "rabotaet v teatre" -> "ya" [xlabel = no, color = "red"]
+    "rabotaet v teatre" -> "opernyy pevec" [xlabel = yes, color = "green"]
+    "vystupaet v cirke" -> "volk" [xlabel = yes, color = "green"]
+    "poet" -> "vystupaet v janre rok" [xlabel = yes, color = "green"]
+    "vystupaet v janre rok" -> "Alla Pugacheva" [xlabel = no, color = "red"]
+    "vystupaet v janre rok" -> "igral v MGU" [xlabel = yes, color = "green"]
+    "igral v MGU" -> "pirokinezis" [xlabel = no, color = "red"]
+    "igral v MGU" -> "noize mc" [xlabel = yes, color = "green"]
+}
